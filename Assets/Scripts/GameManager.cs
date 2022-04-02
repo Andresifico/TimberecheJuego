@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     }
     //Hola Mundo
+
     // Update is called once per frame
     void Update()
     {
