@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class SkinManager : MonoBehaviour
 {
+    public static GameObject PlayerSkin;
     public SpriteRenderer sr;
     public List<Sprite> skins = new List<Sprite>();
     private int selectedSkin = 0;
@@ -35,6 +36,6 @@ public class SkinManager : MonoBehaviour
     public void Return()
     {
         PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Photos/Characters/SelectedSkin.prefab");
-
+        PlayerSkin = playerskin;
     }
 }

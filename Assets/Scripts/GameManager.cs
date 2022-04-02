@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private GameState _gameState;
+    public GameObject Skin1;
+    public GameObject Skin2;
 
     private void Awake()
     {
@@ -24,10 +26,21 @@ public class GameManager : MonoBehaviour
     public void SwitchPlayer()
     {
         if (_gameState == GameState.player1)
+        {
             _gameState = GameState.player2;
+            Skin1.SetActive(!Skin1.activeSelf);
+            Skin2.SetActive(!Skin2.activeSelf);
+        }
         else
+        {
             _gameState = GameState.player1;
+            Skin1.SetActive(!Skin1.activeSelf);
+            Skin2.SetActive(!Skin2.activeSelf);
+            
+        }
+
     }
+    //Hola Mundo
     // Update is called once per frame
     void Update()
     {

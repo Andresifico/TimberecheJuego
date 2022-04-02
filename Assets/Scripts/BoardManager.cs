@@ -7,6 +7,7 @@ public class BoardManager : MonoBehaviour
     public static BoardManager Instance;
     public Square SquarePrefab;
     public Line LinePrefab;
+    
 
     private void Awake()
     {
@@ -14,10 +15,14 @@ public class BoardManager : MonoBehaviour
     }
     // Texture2D.GetPixel
 
+    public void Start()
+    {
+        GenerateBoard();
+    }
     public void GenerateBoard()
     {
-        int Width = MainMenu.N-1;
-        int Height = MainMenu.N-1;
+       int Width = MainMenu.N - 1;
+       int Height = MainMenu.N - 1;
         for (int i = 0; i < Height; i++)
         {
             for (int j = 0; j < Width; j++)

@@ -41,7 +41,7 @@ using UnityEngine;
  // This prevents the first raycastTarget being invoked twice
                  if (firstTargetIgnored)
                  {
-                     if (result.gameObject.GetComponent<GameObject>())
+                     if (result.gameObject.GetComponent<Button>())
                      {
                          Debug.Log("INVOKED:" + result.gameObject.name);
  

@@ -22,6 +22,5 @@ public class SkinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
     }
 }
